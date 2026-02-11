@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- makes English the default language -->
 <html lang="en">
+
 <head>
     <!-- sets the character encoding(the alpahabet we know, the emojis, blah, blah, blah😂)-->
     <meta charset="UTF-8">
@@ -11,33 +12,21 @@
     <title>Ian Nyamosi | Portfolio</title>
     <!-- link to Google Font for the exact font we want-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- CSS styling; custom -->
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        
-        /* The Glass Card Utility */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05); /* Very transparent white */
-            backdrop-filter: blur(16px);             /* The Blur Magic */
-            -webkit-backdrop-filter: blur(16px);     /* Safari support */
-            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);/*Shadow; makes it  look lifted*/
-        }
-    </style>
 </head>
+<!-- Body with Tailwind styling -->
+<!-- layout styling -->
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
-
-    <div class="max-w-sm glass-card rounded-2xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
-        
-        <img class="w-full h-80 object-cover" 
-             src="download.jpg" 
-             alt="Ian Nyamu">
+    <!-- Glass Card styling -->
+    <div
+        class="max-w-sm bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl overflow-hidden text-white transform transition duration-500 hover:scale-105">
+        <!-- Image section -->
+        <img class="w-full h-80 object-cover" src="download.jpg" alt="Ian Nyamu">
 
         <div class="p-6 text-center">
-            
+
             <h1 class="text-2xl font-bold text-gray-900 mb-2">Ian Obino</h1>
-            
+
             <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">
                 Full Stack Developer
             </p>
@@ -47,14 +36,14 @@
             </p>
 
             <div class="space-y-2">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyamosiobino@gmail.com" target="_blank" 
-                   class="block w-full bg-gray-900 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-300">
-                   Email Me
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyamosiobino@gmail.com" target="_blank"
+                    class="block w-full bg-gray-900 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-300">
+                    Email Me
                 </a>
-                
-                <a href="tel:0707615505" 
-                   class="block w-full border border-gray-300 text-gray-700 font-bold py-2 px-4 rounded hover:bg-gray-50 transition duration-300">
-                   0707 615 505
+
+                <a href="tel:0707615505"
+                    class="block w-full border border-gray-300 text-gray-700 font-bold py-2 px-4 rounded hover:bg-gray-50 transition duration-300">
+                    0707 615 505
                 </a>
             </div>
         </div>
