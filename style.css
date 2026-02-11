@@ -16,3 +16,8 @@
         background-color: whitesmoke;
         cursor: pointer;
     }
+
+    .card img {
+    width: 100%;
+    height: auto;
+}
