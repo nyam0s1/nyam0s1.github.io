@@ -16,39 +16,110 @@
 <!-- Body with Tailwind styling -->
 <!-- layout styling -->
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
-    <!-- Glass Card styling -->
-    <div
-        class="max-w-sm bg-[#ddeee7] backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl overflow-hidden text-white transform transition duration-500 hover:scale-105">
-        <!-- Image section -->
-        <img class="w-full h-80 object-cover" src="download.jpg" alt="Ian Nyamosi">
+<body class="bg-slate-900 text-slate-300 font-sans min-h-screen relative selection:bg-blue-500 selection:text-white">
+<!-- Centre positioning of content -->
+    <nav class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <div
+            class="bg-slate-950/80 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 flex items-center gap-6 shadow-2xl">
 
-        <div class="p-6 text-center">
+            <a href="#" class="text-white font-bold tracking-wider hover:text-blue-400 transition">
+                IO
+            </a>
 
-            <h1 class="text-2xl font-bold text-gray-900 mb-2">Ian Obino</h1>
+            <div class="w-px h-4 bg-white/20"></div>
 
-            <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">
-                Full Stack Developer
-            </p>
-
-            <p class="text-gray-600 text-sm mb-6">
-                Building robust backend systems and sleek front-end interfaces.
-            </p>
-
-            <div class="space-y-2">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyamosiobino@gmail.com" target="_blank"
-                    class="block w-full bg-gray-900 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-300">
-                    Email Me
-                </a>
-
-                <a href="tel:0707615505"
-                    class="block w-full border border-gray-300 text-gray-700 font-bold py-2 px-4 rounded hover:bg-gray-50 transition duration-300">
-                    0707 615 505
-                </a>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
             </div>
         </div>
+    </nav>
 
-    </div>
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-20">
+
+        <div class="text-center mb-16">
+            <p class="text-blue-400 font-medium mb-4 tracking-wide uppercase text-sm">System Engineer • .NET Developer
+            </p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Ian Obino.
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                "I enjoy <span class="text-white">bridging the gap</span> between complex data structures and user
+                experience."
+            </p>
+        </div>
+<!-- Makes the items stack vertically on smaller screens, while have 3 columns on larger screens -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Makes this div take up two rows on larger screens -->
+            <div
+                class="bg-slate-800/40 border border-white/5 rounded-3xl p-8 row-span-2 hover:bg-slate-800/60 transition group">
+                <h3 class="text-white font-bold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Tech Stack
+                </h3>
+                <div class="space-y-4">
+                    <div class="group-hover:translate-x-2 transition duration-300">
+                        <p class="text-xs text-slate-500 uppercase mb-1">Core</p>
+                        <p class="text-white font-medium">C# .NET 8</p>
+                    </div>
+                    <div class="group-hover:translate-x-2 transition duration-300 delay-75">
+                        <p class="text-xs text-slate-500 uppercase mb-1">Frontend</p>
+                        <p class="text-white font-medium">Blazor Server</p>
+                    </div>
+                    <div class="group-hover:translate-x-2 transition duration-300 delay-100">
+                        <p class="text-xs text-slate-500 uppercase mb-1">Database</p>
+                        <p class="text-white font-medium">SQL Server</p>
+                    </div>
+                    <div class="group-hover:translate-x-2 transition duration-300 delay-150">
+                        <p class="text-xs text-slate-500 uppercase mb-1">Design</p>
+                        <p class="text-white font-medium">Tailwind CSS</p>
+                    </div>
+                </div>
+            </div>
+<!-- Makes this div span two columns on larger screens -->
+            <div class="bg-blue-600 rounded-3xl p-8 md:col-span-2 relative overflow-hidden group cursor-pointer">
+                <div
+                    class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition transform group-hover:scale-110 duration-500">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.75l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+                    </svg>
+                </div>
+                <div class="relative z-10">
+                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded-md mb-4 inline-block">Latest
+                        Build</span>
+                    <h3 class="text-3xl font-bold text-white mb-2">Payroll System</h3>
+                    <p class="text-blue-100 mb-6 max-w-sm">
+                        Automated wage processing with overtime calculation logic. Built for enterprise scale.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-black/20 rounded-lg text-xs text-white backdrop-blur">.NET 8</span>
+                        <span class="px-3 py-1 bg-black/20 rounded-lg text-xs text-white backdrop-blur">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-slate-800/40 border border-white/5 rounded-3xl p-8 hover:border-white/20 transition cursor-pointer">
+                <h3 class="text-xl font-bold text-white mb-2">EZONI ERP</h3>
+                <p class="text-slate-400 text-sm mb-4">Farm management system with inventory tracking.</p>
+                <div class="w-full bg-slate-700 h-1 rounded-full overflow-hidden">
+                    <div class="bg-purple-500 h-full w-3/4"></div>
+                </div>
+            </div>
+
+            <div
+                class="bg-slate-950 border border-slate-800 rounded-3xl p-8 flex flex-col justify-center items-start hover:border-blue-500/50 transition">
+                <p class="text-slate-400 text-sm mb-2">Have a project?</p>
+                <a href="mailto:nyamosiobino@gmail.com"
+                    class="text-2xl font-bold text-white hover:text-blue-400 transition">
+                    Let's Talk →
+                </a>
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
 
