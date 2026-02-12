@@ -1051,6 +1051,27 @@
                 }
             });
         });
+
+        /**
+         * SMART EMAIL LINK SCRIPT
+         * Detects mobile devices and switches "Force Gmail" links to "mailto:"
+         */
+        document.addEventListener("DOMContentLoaded", function () {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                const mailLinks = document.querySelectorAll('a[href*="mail.google.com"]');
+                mailLinks.forEach(link => {
+                    const url = new URL(link.href);
+                    const to = url.searchParams.get("to");
+                    const subject = url.searchParams.get("su");
+                    const body = url.searchParams.get("body");
+
+                    // Switch to mailto: for native app support
+                    link.href = `mailto:${to}?subject=${subject}&body=${body}`;
+                    link.removeAttribute("target");
+                });
+            }
+        });
     </script>
 
 </body>
