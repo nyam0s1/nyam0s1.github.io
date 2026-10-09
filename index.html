@@ -311,273 +311,206 @@
         </section>
 
         <!-- ==================== PROJECTS SECTION ==================== -->
-        <!-- 
-            - py-20: Padding top/bottom 80px
-            - min-h-screen: Full viewport height
-        -->
         <section id="projects" class="py-20 min-h-screen">
             <div class="max-w-5xl mx-auto">
 
-                <!-- Section Header -->
                 <div class="mb-12 opacity-0 animate-on-scroll">
                     <div class="text-blue-400 text-sm font-mono mb-4 tracking-wider">// PROJECTS</div>
                     <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
                         Building real solutions.
                     </h2>
                     <p class="text-lg text-slate-400">
-                        Here are some of the personal projects I've worked on to sharpen my skills and explore new
-                        technologies.
+                        A selection of personal builds, coursework, and collaborative projects. Open a repository to
+                        explore the source.
                     </p>
                 </div>
 
-                <!-- 
-                    PROJECTS GRID
-                    - space-y-8: 32px vertical spacing between project cards
-                -->
                 <div class="space-y-8">
 
-                    <!-- ========== PROJECT 1: EZONI FARM ========== -->
-                    <!-- 
-                        Project Card
-                        - bg-slate-800/40: Dark background at 40% opacity
-                        - border border-white/5: Very subtle white border
-                        - backdrop-blur-sm: Slight glass effect
-                        - rounded-3xl: Very rounded corners (24px)
-                        - p-8 md:p-12: Padding 32px, increases to 48px on medium+ screens
-                        - hover:bg-slate-800/60: Darker on hover
-                        - hover:border-white/10: Border more visible on hover
-                        - transition-all: Smooth animation for all changes
-                    -->
-                    <div
+                    <!-- EZONI FARM ERP -->
+                    <article
                         class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
-
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">EZONI Farm Portal</h3>
                                 <p class="text-slate-400 text-sm">Personal Project • 2026</p>
                             </div>
+                            <a href="https://github.com/nyam0s1/EZONI" target="_blank" rel="noopener noreferrer"
+                                aria-label="View EZONI Farm Portal on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
-
                         <p class="text-slate-300 text-lg mb-6 leading-relaxed">
-                            A comprehensive digital farm management ERP system built to digitize livestock and farm
-                            produce
-                            tracking, inventory cycles, and financial reporting. A centralized platform that brings
-                            modern
-                            technology to agricultural management.
+                            A full-stack farm management system for centralizing livestock, inventory, and financial
+                            records. The project includes livestock lineage and status tracking, inventory cost
+                            averaging, profit reporting, role-based access, audit trails, and a mobile-friendly
+                            progressive web app.
                         </p>
-
-                        <!-- Key Features -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Full-Stack Architecture</p>
-                                    <p class="text-slate-400 text-sm">PHP/MySQL backend with responsive frontend</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Financial Engine</p>
-                                    <p class="text-slate-400 text-sm">Automated Net Profit calculations & reporting</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Security & Access Control</p>
-                                    <p class="text-slate-400 text-sm">RBAC with Bcrypt hashing and audit trails</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Historical Trends</p>
-                                    <p class="text-slate-400 text-sm">Time-flexible reporting to visualize income</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 
-                            TECHNOLOGY TAGS
-                            - flex flex-wrap gap-2: Horizontal layout that wraps, 8px spacing
-                        -->
                         <div class="flex flex-wrap gap-2">
-                            <!-- 
-                                Each tag:
-                                - px-4 py-2: Padding 16px horizontal, 8px vertical
-                                - bg-slate-700/50: Dark background at 50% opacity
-                                - rounded-lg: Rounded corners
-                                - text-sm: Small text
-                                - text-slate-300: Light gray color
-                            -->
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">PHP</span>
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">MySQL</span>
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">JavaScript</span>
-                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">HTML/CSS</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Chart.js</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- ========== PROJECT 2: WORKER PAYROLL ========== -->
-                    <div
+                    <!-- KENYAN WORKER PAYROLL SYSTEM -->
+                    <article
                         class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
-
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Worker Payroll System</h3>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Kenyan Worker Payroll System</h3>
                                 <p class="text-slate-400 text-sm">Personal Project • 2026</p>
                             </div>
+                            <a href="https://github.com/nyam0s1/WorkerPayrollSystem" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Kenyan Worker Payroll System on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
-
                         <p class="text-slate-300 text-lg mb-6 leading-relaxed">
-                            A comprehensive wage processing application built with .NET 8 and Blazor, designed to
-                            automate
-                            payments for a workforce. Features a responsive administration dashboard for seamless
-                            payroll management.
+                            A Blazor Interactive Server payroll application organized with Clean Architecture and
+                            Entity Framework Core. It covers configurable Kenyan statutory deduction calculations,
+                            employee and overtime management, payroll dashboards, and print-ready payslips.
                         </p>
-
-                        <!-- Key Features -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Full-Stack Development</p>
-                                    <p class="text-slate-400 text-sm">Built with C# and .NET 8 framework</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Blazor UI</p>
-                                    <p class="text-slate-400 text-sm">Responsive dashboard with Razor Components</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Modern Styling</p>
-                                    <p class="text-slate-400 text-sm">Tailwind CSS for clean, responsive design</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Automated Processing</p>
-                                    <p class="text-slate-400 text-sm">Streamlined wage calculation and distribution</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Technology tags -->
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">C# .NET 8</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">C# / .NET</span>
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Blazor</span>
-                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Tailwind
-                                CSS</span>
-                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Razor
-                                Components</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">EF Core</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">SQL</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- ========== PROJECT 3: PERSONAL PORTFOLIO ========== -->
-                    <div
+                    <!-- GARI APP MVP -->
+                    <article
                         class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">GARI App MVP</h3>
+                                <p class="text-slate-400 text-sm">Group Project • MVP</p>
+                            </div>
+                            <a href="https://github.com/MatthewTN18/GARI" target="_blank" rel="noopener noreferrer"
+                                aria-label="View the GARI group project on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            An MVP developed collaboratively as a group project. The repository link opens the team's
+                            GARI project.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Team collaboration</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">MVP</span>
+                        </div>
+                    </article>
 
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                    <!-- FERTILISER TRACEABILITY -->
+                    <article
+                        class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Fertiliser Traceability</h3>
+                                <p class="text-slate-400 text-sm">Personal Project • In progress</p>
+                            </div>
+                            <a href="https://github.com/nyam0s1/fertiliser-traceability" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Fertiliser Traceability on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            An early-stage scaffold for a web-based QR-code fertiliser traceability system for Kenya’s
+                            National Fertiliser Subsidy Programme. The public repository currently contains starter
+                            frontend and backend structure with a draft database schema.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">QR traceability</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">SQL schema</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Prototype</span>
+                        </div>
+                    </article>
+
+                    <!-- PENSOFT UI -->
+                    <article
+                        class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Pensoft Systems Website UI</h3>
+                                <p class="text-slate-400 text-sm">Web Development • Pensoft Systems</p>
+                            </div>
+                            <a href="https://github.com/nyam0s1/PensoftUI" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Pensoft Systems Website UI on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            A multi-page Blazor interface for Pensoft Systems, with dedicated pages for the company,
+                            products, services, solutions, technology, and contact information.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">C# / .NET</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Blazor</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Razor</span>
+                        </div>
+                    </article>
+
+                    <!-- MTA RIDERSHIP EXPLORATION -->
+                    <article
+                        class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">MTA Ridership Exploration</h3>
+                                <p class="text-slate-400 text-sm">Machine Learning Coursework • 2025</p>
+                            </div>
+                            <a href="https://github.com/nyam0s1/SemProject_MLEngine" target="_blank" rel="noopener noreferrer"
+                                aria-label="View MTA Ridership Exploration on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View repository <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            A Jupyter notebook exploring hourly MTA M15 ridership data for Q1 2025. It profiles the
+                            dataset’s 51,840 records and six columns and examines ridership as a potential forecasting
+                            target.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Python</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Jupyter Notebook</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Data exploration</span>
+                        </div>
+                    </article>
+
+                    <!-- PERSONAL PORTFOLIO SOURCE -->
+                    <article
+                        class="bg-slate-800/40 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-10 hover:bg-slate-800/60 hover:border-white/10 transition-all group opacity-0 animate-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Personal Portfolio Site</h3>
                                 <p class="text-slate-400 text-sm">Personal Project • 2026</p>
                             </div>
-
-                            <!-- LIVE TAG - Only this project has a status tag -->
-                            <div
-                                class="mt-4 md:mt-0 flex items-center gap-2 bg-green-500/20 px-4 py-2 rounded-full text-green-300 text-sm">
-                                <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-                                Live
-                            </div>
+                            <a href="https://github.com/nyam0s1/nyam0s1.github.io" target="_blank" rel="noopener noreferrer"
+                                aria-label="View Personal Portfolio Site source on GitHub"
+                                class="inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300 transition hover:border-blue-400/40 hover:bg-blue-400/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400">
+                                View source <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
-
                         <p class="text-slate-300 text-lg mb-6 leading-relaxed">
-                            You're looking at it! A modern, responsive portfolio showcasing my work and skills.
-                            Built with a focus on clean design, smooth animations, and excellent user experience.
+                            A responsive portfolio built to present my work and skills, with a dark visual theme,
+                            Tailwind CSS styling, and scroll-triggered animations.
                         </p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Responsive Design</p>
-                                    <p class="text-slate-400 text-sm">Works beautifully on all devices</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <div>
-                                    <p class="text-white font-medium">Smooth Animations</p>
-                                    <p class="text-slate-400 text-sm">Engaging scroll-triggered effects</p>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="flex flex-wrap gap-2">
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">HTML5</span>
-                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Tailwind
-                                CSS</span>
+                            <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">Tailwind CSS</span>
                             <span class="px-4 py-2 bg-slate-700/50 rounded-lg text-sm text-slate-300">JavaScript</span>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
         </section>
-
         <!-- ==================== TECH STACK SECTION ==================== -->
         <section id="stack" class="py-20 min-h-screen flex items-center">
             <div class="max-w-5xl mx-auto w-full">
